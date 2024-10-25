@@ -9,12 +9,12 @@ class PrintBasic(ABC):
 
 
 class PrintConsole(PrintBasic):
-    def print_book(self, book: Book):
+    def print_book(self, book: Book) -> None:
         print(f"Printing the book: {book.title}...")
         print(book.content)
 
 
 class PrintReverse(PrintBasic):
-    def print_book(self, book: Book):
+    def print_book(self, book: Book) -> None:
         print(f"Printing the book: {book.title}...")
         print(book.content[::-1])
